@@ -4,22 +4,22 @@ layout: default
 
 <section class="hero">
   <div class="hero-copy">
-    <h1>¡Hola!</h1>
+    <h1>Hello!</h1>
     <p>
-      Soy Giovanni Cortés, un ingeniero de software que le gusta la
-      programación, juegos, computadoras y entender cómo las cosas funcionan.
+      I'm Giovanni Cortés, a software engineer who enjoys programming, games,
+      computers, and understanding how things work.
     </p>
   </div>
 
   <img
     class="hero-image"
     src="{{ '/assets/img/retro-desk-transparent.png' | relative_url }}"
-    alt="Escritorio retro con computadora"
+    alt="Retro desk with a computer"
   />
 </section>
 
 <section class="recent-articles">
-  <h2>Artículos Recientes</h2>
+  <h2>Recent Articles</h2>
   {% for post in site.posts limit: 8 %}
   <article class="article-row">
     <time>{{ post.date | date: "%Y-%m-%d" }}</time>
@@ -31,33 +31,33 @@ layout: default
 
 <div class="home-columns">
   <section class="featured-projects">
-    <h2>Proyectos Destacados</h2>
+    <h2>Featured Projects</h2>
 
     <article>
-      <h3>Nombre del Proyecto</h3>
-      <p>Descripción breve del proyecto destacado.</p>
-      <a href="#">Ver más</a>
+      <h3>Project Name</h3>
+      <p>Brief description of the featured project.</p>
+      <a href="#">Learn more</a>
     </article>
   </section>
 
   <section class="about-summary">
-    <h2>Acerca de Mí</h2>
+    <h2>About Me</h2>
     <p>
-      Soy un desarrollador backend de día y un entusiaste retro gamer de noche.
-      Disfruto contruir cosas, investigar sobre cómo funcionan los sitemas y
-      compartir lo que aprendo.
+      I'm a backend developer by day and a retro gaming enthusiast by night.
+      I enjoy building things, researching how systems work, and sharing what
+      I learn.
     </p>
 
-    <p>Este sitio es donde escribo sobre:</p>
+    <p>This is where I write about:</p>
 
     <ul>
-      <li>Ingeniería de Software</li>
+      <li>Software Engineering</li>
       <li>Game Development</li>
-      <li>Juegos retro y hardware</li>
-      <li>Computarodas, herramientas y experimentos</li>
+      <li>Retro games and hardware</li>
+      <li>Computers, tools, and experiments</li>
     </ul>
 
-    <p>Si te gustan todas estas cosas, estás en el lugar correcto.</p>
-    <a href="/acerca/">Conoce más sobre mí →</a>
+    <p>If you enjoy all these things, you're in the right place.</p>
+    <a href="/acerca/">Learn more about me →</a>
   </section>
 </div>
